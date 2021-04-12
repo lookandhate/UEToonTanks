@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ToonTanks.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{1F2F3FEC-3168-4257-8DFD-BDE10C105217}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ToonTanks.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ToonTanksEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{3B3D5D8E-3E0F-460E-9C77-DBF5C0089D2E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\ToonTanks">
+      <UniqueIdentifier>{61894F2A-8249-48C4-B6D9-CB0CF21FC021}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ToonTanks\ToonTanks.Build.cs">
+      <Filter>Source\ToonTanks</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ToonTanks\ToonTanks.cpp">
+      <Filter>Source\ToonTanks</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ToonTanks\ToonTanks.h">
+      <Filter>Source\ToonTanks</Filter>
+    </ClInclude>
+    <Filter Include="Source\ToonTanks\Actors">
+      <UniqueIdentifier>{09014AEB-DC98-4DF7-994D-0420A9263904}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ToonTanks\Actors\ProjectileBase.cpp">
+      <Filter>Source\ToonTanks\Actors</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ToonTanks\Actors\ProjectileBase.h">
+      <Filter>Source\ToonTanks\Actors</Filter>
+    </ClInclude>
+    <Filter Include="Source\ToonTanks\Components">
+      <UniqueIdentifier>{3BAB2155-45E3-40E6-A0D9-AE13DCBD4344}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ToonTanks\Components\HealthComponent.cpp">
+      <Filter>Source\ToonTanks\Components</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ToonTanks\Components\HealthComponent.h">
+      <Filter>Source\ToonTanks\Components</Filter>
+    </ClInclude>
+    <Filter Include="Source\ToonTanks\Gamemodes">
+      <UniqueIdentifier>{1A07E8BE-01FA-44BE-8325-CCBD937ED254}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ToonTanks\Gamemodes\TanksBaseGamemode.cpp">
+      <Filter>Source\ToonTanks\Gamemodes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ToonTanks\Gamemodes\TanksBaseGamemode.h">
+      <Filter>Source\ToonTanks\Gamemodes</Filter>
+    </ClInclude>
+    <Filter Include="Source\ToonTanks\Pawns">
+      <UniqueIdentifier>{82C2E7BD-FDB8-4390-915B-A53F2631957E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ToonTanks\Pawns\BasePawn.cpp">
+      <Filter>Source\ToonTanks\Pawns</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ToonTanks\Pawns\BasePawn.h">
+      <Filter>Source\ToonTanks\Pawns</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ToonTanks\Pawns\PawnTank.cpp">
+      <Filter>Source\ToonTanks\Pawns</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ToonTanks\Pawns\PawnTank.h">
+      <Filter>Source\ToonTanks\Pawns</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ToonTanks\Pawns\PawnTurret.cpp">
+      <Filter>Source\ToonTanks\Pawns</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ToonTanks\Pawns\PawnTurret.h">
+      <Filter>Source\ToonTanks\Pawns</Filter>
+    </ClInclude>
+    <Filter Include="Source\ToonTanks\PlayerControllers">
+      <UniqueIdentifier>{8DB34D7E-07AC-4F72-BD97-EC7033651787}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ToonTanks\PlayerControllers\PlayerControllerBase.cpp">
+      <Filter>Source\ToonTanks\PlayerControllers</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ToonTanks\PlayerControllers\PlayerControllerBase.h">
+      <Filter>Source\ToonTanks\PlayerControllers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
