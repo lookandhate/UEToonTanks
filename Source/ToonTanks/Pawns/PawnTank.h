@@ -30,11 +30,14 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	bool IsAlive() const;
+	
+	UFUNCTION(BlueprintImplementableEvent, Category = "DmgSystem")
+    void OnFire();
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
+	void Fire() override;
 
 
 private:
@@ -53,7 +56,13 @@ private:
 	float m_MoveSpeed = 1000.f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement", DisplayName="Rotate Speed", meta = (AllowPrivateAccess = "true"))
 	float m_RotateSpeed = 100.f;
-	
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Combat", DisplayName="Shells to fire", meta = (AllowPrivateAccess = "true"))
+	int m_Shells = 10;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Combat|Debug", DisplayName="Show debug combat info", meta = (AllowPrivateAccess = "true"))
+	bool m_bDebugCombat = false;
+
 	bool m_bIsAlive = true;
 
 	

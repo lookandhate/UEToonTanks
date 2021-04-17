@@ -58,6 +58,22 @@ void APawnTank::Rotate()
 	 AddActorLocalRotation(m_RotationDirection, true);
 }
 
+void APawnTank::Fire()
+{
+	if(m_Shells <=0)
+		return;
+	m_Shells--;
+	if(m_bDebugCombat)
+	{
+		GEngine->AddOnScreenDebugMessage(4, 4, FColor::Yellow, FString::Printf(TEXT("%d sheels left"), m_Shells));
+	}
+	
+	OnFire();
+	Super::Fire();
+
+}
+
+
 // Called every frame
 void APawnTank::Tick(float DeltaTime)
 {
@@ -90,3 +106,4 @@ bool APawnTank::IsAlive() const
 {
 	return m_bIsAlive;
 }
+
