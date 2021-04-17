@@ -26,6 +26,18 @@ void UHealthComponent::BeginPlay()
 	GetOwner()->OnTakeAnyDamage.AddDynamic(this, &UHealthComponent::TakeDamage);
 }
 
+float UHealthComponent::GetCurrentHealth() const
+{
+	return m_fHealth;
+}
+float UHealthComponent::GetMaxHealth() const
+{
+	return m_fDefaultHealth;
+}
+
+
+
+
 void UHealthComponent::TakeDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType, AController* InstigatedBy, AActor* DamageCauser)
 {
 	if(Damage == 0)
