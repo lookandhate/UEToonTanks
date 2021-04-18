@@ -30,7 +30,7 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	int GetShellsCount() const;
-	int SetShellsCount(int shells);
+	void SetShellsCount(int shells);
 
 	bool IsAlive() const;
 	
@@ -41,7 +41,6 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	void Fire() override;
-
 
 private:
 
@@ -57,6 +56,8 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement", DisplayName="Move speed", meta = (AllowPrivateAccess = "true"))
 	float m_MoveSpeed = 1000.f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement", DisplayName="Default move speed", meta = (AllowPrivateAccess = "true"))
+	float m_DefaultMoveSpeed = 1000.f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement", DisplayName="Rotate Speed", meta = (AllowPrivateAccess = "true"))
 	float m_RotateSpeed = 100.f;
 

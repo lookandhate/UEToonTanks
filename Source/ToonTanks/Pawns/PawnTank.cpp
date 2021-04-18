@@ -21,6 +21,7 @@ void APawnTank::BeginPlay()
 {
 	Super::BeginPlay();
 	m_PlayerController = Cast<APlayerController>(GetController());
+
 }
 
 void APawnTank::HandleDestruction()
@@ -31,9 +32,6 @@ void APawnTank::HandleDestruction()
 
 	SetActorHiddenInGame(true);
 	SetActorTickEnabled(false);
-
-	
-	//Destroy();
 }
 
 void APawnTank::CalculateMoveInput(float Value)
@@ -73,7 +71,6 @@ void APawnTank::Fire()
 
 }
 
-
 // Called every frame
 void APawnTank::Tick(float DeltaTime)
 {
@@ -107,7 +104,7 @@ int APawnTank::GetShellsCount() const
 	return m_Shells;
 }
 
-int APawnTank::SetShellsCount(int shells)
+void APawnTank::SetShellsCount(int shells)
 {
 	m_Shells = shells;
 }
@@ -116,4 +113,3 @@ bool APawnTank::IsAlive() const
 {
 	return m_bIsAlive;
 }
-

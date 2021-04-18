@@ -42,7 +42,10 @@ private:
 
 	UPROPERTY(EditAnywhere, Category="VisualEffects")
 	UParticleSystem* m_ProjectileHitParticle;
-	
+
+	UPROPERTY(EditAnywhere, Category="VisualEffects")
+	TSubclassOf<UMatineeCameraShake> HitCamShake;
+
 
 private:
 	void ProjectileSpawnDebug();

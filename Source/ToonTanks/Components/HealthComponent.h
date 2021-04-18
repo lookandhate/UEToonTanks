@@ -40,6 +40,7 @@ private:
 	float m_fDefaultHealth = 300.f;
 	float m_fHealth = 0.f;
 
+	
 	ATanksBaseGamemode* GameModeRef;
 		
 };

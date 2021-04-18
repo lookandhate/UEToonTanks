@@ -37,7 +37,6 @@ void AProjectileBase::BeginPlay()
 	
 }
 
-
 void AProjectileBase::ProjectileSpawnDebug()
 {
 	if(!GEngine)
@@ -66,6 +65,7 @@ void AProjectileBase::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 
 	UGameplayStatics::ApplyDamage(OtherActor, m_fDamage, InstigatorController, this, DamageType);
 	UGameplayStatics::SpawnEmitterAtLocation(this, m_ProjectileHitParticle, GetActorLocation());
+	GetWorld()->GetFirstPlayerController()->ClientStartCameraShake(HitCamShake);
 	
 	Destroy();
 }
