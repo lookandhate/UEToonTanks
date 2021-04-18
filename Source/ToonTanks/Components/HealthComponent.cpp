@@ -47,7 +47,11 @@ void UHealthComponent::TakeDamage(AActor* DamagedActor, float Damage, const UDam
 	}
 
 	UE_LOG(LogTemp, Display, TEXT("%s taking damage %f points from %s(Causer=%s), DamageType is %s"),
-							      *GetOwner()->GetName(), Damage, *InstigatedBy->GetName(), *DamageCauser->GetName(), *DamageType->GetName())
+							      *GetOwner()->GetName(), Damage,
+							      InstigatedBy ? *InstigatedBy->GetName() : TEXT("InstigatedBy=nullptr"),
+							      DamageCauser ? *DamageCauser->GetName():  TEXT("DamageCauser=nullptr"),
+							      DamageType ? *DamageType->GetName() :  TEXT("DamageType=nullptr")
+							      )
 	m_fHealth = FMath::Clamp(m_fHealth - Damage, 0.0f, m_fDefaultHealth);
 
 	if(m_fHealth <= 0) // Check if health below zero.
