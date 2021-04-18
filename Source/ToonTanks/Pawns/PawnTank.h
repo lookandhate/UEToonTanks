@@ -29,6 +29,9 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	int GetShellsCount() const;
+	int SetShellsCount(int shells);
+
 	bool IsAlive() const;
 	
 	UFUNCTION(BlueprintImplementableEvent, Category = "DmgSystem")

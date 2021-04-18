@@ -102,6 +102,16 @@ void APawnTank::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	
 }
 
+int APawnTank::GetShellsCount() const
+{
+	return m_Shells;
+}
+
+int APawnTank::SetShellsCount(int shells)
+{
+	m_Shells = shells;
+}
+
 bool APawnTank::IsAlive() const
 {
 	return m_bIsAlive;
