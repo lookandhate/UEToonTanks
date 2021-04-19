@@ -32,6 +32,13 @@ public:
 	int GetShellsCount() const;
 	void SetShellsCount(int shells);
 
+	UFUNCTION(BlueprintCallable)
+	float GetBaseSpeed() const;
+	UFUNCTION(BlueprintCallable)
+	float GetCurrentSpeed() const;
+	UFUNCTION(BlueprintCallable)
+	void SetSpeed(float NewSpeed);
+
 	bool IsAlive() const;
 	
 	UFUNCTION(BlueprintImplementableEvent, Category = "DmgSystem")

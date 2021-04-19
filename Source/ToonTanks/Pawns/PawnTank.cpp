@@ -109,6 +109,21 @@ void APawnTank::SetShellsCount(int shells)
 	m_Shells = shells;
 }
 
+float APawnTank::GetBaseSpeed() const
+{
+	return m_DefaultMoveSpeed;
+}
+
+float APawnTank::GetCurrentSpeed() const
+{
+	return m_MoveSpeed;
+}
+
+void APawnTank::SetSpeed(float NewSpeed)
+{
+	m_MoveSpeed = NewSpeed;
+}
+
 bool APawnTank::IsAlive() const
 {
 	return m_bIsAlive;
